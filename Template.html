@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+ul.side {
+    list-style-type: none;
+    text-align: none;
+}
+
+p {
+    margin: 0;
+}
+.article {
+    text-align: left;
+    text-rendering: auto;
+
+    text-indent: 50px;
+    padding: 15px;
+    padding-bottom: 0px;
+
+}
+body {
+    margin: 0;
+}
+
+/* Style the header */
+.header {
+    background-color: #white;
+    margin: none;
+    border: none;
+    padding: 0px;
+    float: left;
+
+}
+.header.sideleft{
+    text-align: left;
+    float: left;
+    width: 50%;
+}
+.header.sideright{
+    text-align: right;
+    width: 50%;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: right;
+}
+
+/* Left and right column */
+.column.sideleft {
+    width: 15%;
+    height:100%;
+    top:0;
+    position:fixed;
+    background-color: black;
+    text-align: center;
+    overflow-y: scroll;
+
+}
+.sideleft a {
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+}
+.sideleft a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.column.sideright {
+    width: 25%;
+    padding: 50px;
+    text-align: left;
+    text-indent: 50px;
+
+}
+/* Middle column */
+.column.middle {
+    width: 60%;
+    text-rendering: auto;
+    overflow-y:auto;
+    text-align: left;
+    text-indent: 50px;
+    padding: none;
+    z-index:2;
+    left:2;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    padding: 50px;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+.navbar {
+    overflow: hidden;
+    width: 100%;
+    background-color: DarkBlue;
+    font-family: Arial;
+    position:fixed;
+    top:1;
+    left:1;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #003d99;
+}
+
+.show {
+    display: block;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div>
+  <h1 class="header sideleft">Heaadsdfsfsdfadsfder</h1>
+  <h1 class="header sideright">CSS Template using Float</h1>
+  <p>sdf</p>
+</div>
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column sideleft" style="background-color: black";>
+      <a>Coffee</a>
+      <a>Tea</a>
+      <a>Cat</a>
+      <a href="dog.html">Dog</a>
+      <a>Coca Cola</a>
+      <a>Coca Cola</a>
+      <a>Coca Cola</a>
+      <a>Coca Cola</a>
+      <a>Coca Cola</a>
+      <a>Coca Cola</a>
+      <a>Coca Cola</a>
+      <a>Coca Cola</a>
+      <a>Coca Cola</a>
+      <a>Coca Cola</a>
+
+  </div>
+  <div class="column sideright" style="background-color:#ccc;">
+  aslkdjflan alsd nflasnd lasndf lans flasn lfanfo kenl aknds okand fwef0 kansdolf kansdo fnkadsofk n02qrn awknef kanof kansf lkna30f knawef knlwkfn oqwknef qwoknefp 4fqk weflk awkf kwe fksflka efk awkflem f
+  </div>
+  <div class="column middle" style="background-color:#bbb;">
+    <p class="article">
+    The domestic cat[1][5] (Felis silvestris catus or Felis catus) is a small, typically furry, carnivorous mammal. They are often called house cats when kept as indoor pets or simply cats when there is no need to distinguish them from other felids and felines.[6] Cats are often valued by humans for companionship and for their ability to hunt vermin. There are more than 70 cat breeds, though different associations proclaim different numbers according to their standards.
+    </p>
+    <p class="article">
+    Cats are similar in anatomy to the other felids, with a strong flexible body, quick reflexes, sharp retractable claws, and teeth adapted to killing small prey. Cat senses fit a crepuscular and predatory ecological niche. Cats can hear sounds too faint or too high in frequency for human ears, such as those made by mice and other small animals. They can see in near darkness. Like most other mammals, cats have poorer color vision and a better sense of smell than humans. Cats, despite being solitary hunters, are a social species and cat communication includes the use of a variety of vocalizations (mewing, purring, trilling, hissing, growling, and grunting), as well as cat pheromones and types of cat-specific body language.[7]
+    </p >
+    <p class="article">
+    Cats have a high breeding rate.[8] Under controlled breeding, they can be bred and shown as registered pedigree pets, a hobby known as cat fancy. Failure to control the breeding of pet cats by neutering, as well as the abandonment of former household pets, has resulted in large numbers of feral cats worldwide, requiring population control.[9] In certain areas outside cats' native range, this has contributed, along with habitat destruction and other factors, to the extinction of many bird species. Cats have been known to extirpate a bird species within specific regions and may have contributed to the extinction of isolated island populations.[10] Cats are thought to be primarily responsible for the extinction of 33 species of birds, and the presence of feral and free-ranging cats makes some otherwise suitable locations unsuitable for attempted species reintroduction.[11]
+    </p>
+    <p class="article">
+    Since cats were venerated in ancient Egypt, they were commonly believed to have been domesticated there,[12] but there may have been instances of domestication as early as the Neolithic from around 9,500 years ago (7,500 BC).[13] A genetic study in 2007[14] concluded that all domestic cats are descended from Near Eastern wildcats, having diverged around 8,000 BC in the Middle East.[12][15] A 2016 study found that leopard cats were undergoing domestication independently in China around 5,500 BC, though this line of partially domesticated cats leaves no trace in the domesticated populations of today.[16][17] A 2017 study confirmed that domestic cats are descendants of those first domesticated by farmers in the Near East around 9,000 years ago.[18][19]
+    </p>
+    <p class="article">
+    As of a 2007 study, cats are the second most popular pet in the US by number of pets owned, behind freshwater fish.[20] In a 2010 study they were ranked the third most popular pet in the UK, after fish and dogs, with around 8 million being owned.[21]
+    </p>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>Footer</p>
+</div>
+<script>
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+</body>
+</html>

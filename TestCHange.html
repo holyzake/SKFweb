@@ -1,0 +1,30 @@
+<html>
+<body>
+
+<img id="image1" src="cat.jpeg" onclick="myFunction1()">
+
+
+
+
+<p id="body1">The original image was smiley.gif, but the script changed it to landscape.jpg</p>
+
+</body>
+<script>
+x=1
+function myFunction1() {
+
+    if (x==1){
+      document.getElementById("image1").src = "logo.png";
+      document.getElementById("body1").innerHTML = "this is a cat";
+      x=2
+    }
+    else if  (x==2) {
+      document.getElementById("image1").src = "cat.jpeg";
+      document.getElementById("body1").innerHTML = "The original image was smiley.gif, but the script changed it to landscape.jpg";
+      x=1
+    }
+}
+</script>
+
+
+</html>
